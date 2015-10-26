@@ -1,0 +1,15 @@
+/* 
+	When adding styles to a Bootstrap page, remember that
+	Bootstrap has already added lots of styles. So be
+	minimal! Add ONLY what you really need!
+	*/
+
+/* add a bit of space below the form buttons */
+.bottom-edge {
+	padding-bottom: 40px;
+	}
+
+/* increase text size for the small text, not headings */
+p, label {
+	font-size: 120%;
+	}
