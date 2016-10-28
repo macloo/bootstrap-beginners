@@ -18,8 +18,9 @@
 
 <div class="container">
 <div class="row">
-<section class="col-xs-12">
-<!-- using all the columns for all the sizes -->
+    <!-- use of section puts nice small margin all around for phone size -->
+    <section class="col-xs-12">
+        <!-- using all the columns for all the sizes -->
 
 
 <h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
@@ -42,18 +43,18 @@
 </div>
 
 <div class="form-group">
-<label for="form-email">Email Address:</label>
-<input type="email" name="emailaddress" id="form-email" class="form-control">
+    <label for="form-email">Email Address:</label>
+    <input type="email" name="emailaddress" id="form-email" class="form-control">
 </div>
 
 <div class="form-group">
-<label for="form-tel">Telephone Number:</label>
-<input type="tel" name="telephone" id="form-tel" class="form-control">
+    <label for="form-tel">Telephone Number:</label>
+    <input type="tel" name="telephone" id="form-tel" class="form-control">
 </div>
 
 <div class="form-group">
-<label for="form-story">My shoes are SO old ...</label>
-<textarea name="story" rows="4" maxlength="300" id="form-story" placeholder="No more than 300 characters long" class="form-control"></textarea>
+    <label for="form-story">My shoes are SO old ...</label>
+    <textarea name="story" rows="4" maxlength="300" id="form-story" placeholder="No more than 300 characters long" class="form-control"></textarea>
 </div>
 
 
@@ -100,7 +101,7 @@
 <div class="form-group">
     <legend>Size</legend>
     <p>Sizes reflect standard men's sizes:
-    <select name="size" size="1" class="form-inline">
+    <select name="size" class="form-inline">
     <option>5</option>
     <option>6</option>
     <option>7</option>
@@ -110,13 +111,13 @@
     <option>11</option>
     <option>12</option>
     <option>13</option>
-    </select></p>
+    </select>
 </div><!-- end form-group -->
 
 <div class="form-group bottom-edge">
     <!-- added button styles -->
-    <input class="btn btn-success" type="submit" value="Pimp My Shoes!">
-    <input class="btn btn-default" type="reset"></p>
+    <input class="btn btn-success btn-lg col-md-6 col-sm-12" type="submit" value="Pimp My Shoes!">
+    <input class="btn btn-default btn-lg col-md-6 col-sm-12" type="reset">
 </div><!-- end form-group -->
 
 </form>
