@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Basic Bootstrap File with a Form</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/mystyles.css">
+</head>
+<body>
+<!-- this is the form from Robbins's file, shown on page 153
+    WITH adaptations added for Bootstrap
+    Learning Web Design, 4th edition (O'Reilly)
+    -->
+
+
+<div class="container">
+<div class="row">
+    <!-- use of section puts nice small margin all around for phone size -->
+<section class="col-xs-12">
+    <!-- using all the columns for all the sizes -->
+
+
+<h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+
+<p class="lead">Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one of ten lucky winners.</p>
+
+
+<form id="myForm" action="/echo/html/" method="post">
+
+
+<h2>Contest Entry Information</h2>
+
+<!-- Added a DIV with class="form-group" around each input field
+	and its label as shown in Ray's video "Creating a basic form."
+	Also added class="form-control" within each input tag.
+	-->
+<div class="form-group">
+    <label for="form-name">Name:</label>
+    <input type="text" name="username" id="form-name" class="form-control">
+</div>
+
+<div class="form-group">
+    <label for="form-email">Email Address:</label>
+    <input type="email" name="emailaddress" id="form-email" class="form-control">
+</div>
+
+<div class="form-group">
+    <label for="form-tel">Telephone Number:</label>
+    <input type="tel" name="telephone" id="form-tel" class="form-control">
+</div>
+
+<div class="form-group">
+    <label for="form-story">My shoes are SO old ...</label>
+    <textarea name="story" rows="4" maxlength="300" id="form-story" placeholder="No more than 300 characters long" class="form-control"></textarea>
+</div>
+
+
+<h2>Design Your Custom Forcefields</h2>
+
+<fieldset class="form-group">
+    <legend>Custom Shoe Design</legend>
+
+<!-- changes made as shown in Ray's video "Formatting radio and
+	checkbox controls."
+	-->
+
+<div class="form-group">
+    <label>Color <em>(choose one)</em></label>
+    <div class="radio">
+    <label><input type="radio" name="color" value="red"> Red</label>
+    </div>
+    <div class="radio">
+    <label><input type="radio" name="color" value="blue"> Blue</label>
+    </div>
+    <div class="radio">
+    <label><input type="radio" name="color" value="black"> Black</label>
+    </div>
+    <div class="radio">
+    <label><input type="radio" name="color" value="silver"> Silver</label>
+    </div>
+</div><!-- end form-group -->
+
+<div class="form-group">
+    <label>Features <em>(choose as many as you want)</em></label>
+    <div class="checkbox">
+    <label><input type="checkbox" name="features" value="laces"> Sparkley laces</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" name="features" value="logo" checked> Metallic logo</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" name="features" value="heels"> Light-up heels</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" name="features" value="mp3"> MP3-enabled</label>
+    </div>
+</div><!-- end form-group -->
+
+</fieldset>
+
+<fieldset class="form-group">
+    <legend>Size</legend>
+    <p>Sizes reflect standard men's sizes:
+    <select name="size" id="size" class="form-inline">
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    </select>
+</fieldset><!-- end form-group -->
+
+<div class="form-group">
+    <!-- added button styles -->
+    <input class="btn btn-success btn-lg" type="submit" value="Pimp My Shoes!">
+    <input class="btn btn-default btn-lg" type="reset" value="Start Over">
+</div><!-- end form-group -->
+
+</form>
+
+<div id="showAnswers" class="alert alert-success" role="alert"></div>
+
+</section>
+</div><!-- close row -->
+</div><!-- close container -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- this script MUST be at bottom! -->
+<script src="js/processor_v7.js"></script>
+</body>
+</html>
